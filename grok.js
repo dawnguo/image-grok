@@ -22,7 +22,6 @@ function runthis() {
 			var numberOfImages = 0;
 
 			/*Add css - Must change this if you want to use your own CSS*/
-			jQuery('<style type="text/css">@import url("https://raw.github.com/gist/3829860/7451abb4b4b8cce8288cf9997a360430dbae055a/css-grok.css");</style>').appendTo("head");
 			$('<link rel="stylesheet" type="text/css" href="https://raw.github.com/colbyh/image-grok/master/grok.css">').appendTo("head");
 
 			/*Add toggle*/
