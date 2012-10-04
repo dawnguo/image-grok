@@ -40,7 +40,6 @@ function imageGrok() {
 					bgSize = "background-size:100%;"
 				}
 				finalLink = "<li style='background:url("+this.src+") center center no-repeat;"+bgSize+"'><a href='http://google.com'><span>text here?</span></a>"
-				// finalLink =  beginLiTag + this + endATag + beginImageTag + this + middleImageTag + endImageTag + "<span>" + 'width' + " x " + 'height' + "</span>" + endLiTag;
 				$('#list-of-images').append(finalLink);
 			})
 			
