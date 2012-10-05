@@ -39,10 +39,15 @@ function imageGrok() {
 				else {
 					bgSize = "background-size:100%;"
 				}
-				finalLink = "<li style='background:url("+this.src+") center center no-repeat;"+bgSize+"'><a href='http://google.com'><span>text here?</span></a>"
+	
+				finalLink = "<li style='background:url("+this.src+") center center no-repeat;"+bgSize+"'><a href='"+this.src+"'></a>"
 				$('#list-of-images').append(finalLink);
 			})
-			
+			$('#list-of-images a').click(function(e){
+				e.preventDefault();
+				iGlink = "http://localhost:3000/add_image?img="+this.href
+				window.open(iGlink,'popup','width=600,height=340');
+			})
 	    }
 	});
 };  
