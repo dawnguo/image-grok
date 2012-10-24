@@ -6,6 +6,6 @@ that you might be familiar with except this bookmarklet actually traverses ifram
 
 Create a bookmark with the following address with your JS file substituted:
 
-javascript: (function () {       var jsCode = document.createElement('script');       jsCode.setAttribute('src', 'https://PATH/TO/YOUR/JS');     document.body.appendChild(jsCode);    }());
+    javascript: (function () {var jsCode = document.createElement('script'); jsCode.setAttribute('src', 'https://PATH/TO/YOUR/JS'); document.body.appendChild(jsCode);}());
 
 For simple file hosting filepicker.io has been a great resource. 
